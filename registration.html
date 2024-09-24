@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration and Login Form</title>
-    <style>
-        .error { color: red; }
-    </style>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>Registration Form</h2>
@@ -45,17 +43,7 @@
         <div id="registrationErrors" class="error"></div>
     </form>
 
-    <h2>Login Form</h2>
-    <form id="loginForm" onsubmit="return validateLoginForm()">
-        <label for="loginEmail">Email:</label><br>
-        <input type="email" id="loginEmail" name="loginEmail" required><br><br>
-
-        <label for="loginPassword">Password:</label><br>
-        <input type="password" id="loginPassword" name="loginPassword" required><br><br>
-
-        <button type="submit">Login</button><br><br>
-        <div id="loginErrors" class="error"></div>
-    </form>
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
 
     <script src="validation.js"></script>
 </body>
